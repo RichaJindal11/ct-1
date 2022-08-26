@@ -22,19 +22,22 @@ int main()
         for(j=i; j<n; j++){
             sum = sum + v1[j];
             if(sum==0){
-                flag=true;
-                break;
+                ans.push_back(v1[j]);
+                for(int j=0; j<ans.size(); j++){
+                    cout<<ans[j]<<" ";
+                }
+                cout<<endl;
             }
             ans.push_back(v1[j]);
         }
-        ans.push_back(v1[j]);
+        
        // cout<<endl;
-        if(flag==true){
-            for(int j=0; j<ans.size(); j++){
-                cout<<ans[j]<<" ";
-            }
-            cout<<endl;
-        }
+        // if(flag==true){
+        //     for(int j=0; j<ans.size(); j++){
+        //         cout<<ans[j]<<" ";
+        //     }
+        //     cout<<endl;
+        // }
     }
 // 6
 // 4 2 -3 -1 0 4
